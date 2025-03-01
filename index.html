@@ -4,38 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A3-0002</title>
-    <!-- tailwind-daisdyui css -->
+    <!-- Tailwind & DaisyUI CSS -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Sora:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<style>
-.font-sora {
-    font-family: "Sora", sans-serif;
-  }
-</style>
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/00d58df696.js" crossorigin="anonymous"></script>
+    <style>
+        .font-sora {
+            font-family: "Sora", sans-serif;
         }
-      }
-    }
-  </script>
+    </style>
 </head>
 <body class="font-sora">
-    <header>
-     
+    <header class="bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF]">
+        <nav>
+            <div class="navbar bg-base-100 shadow-sm flex justify-between lg:mx-auto md:container md:mx-auto w-full">
+                <!-- Left Side (Logo) -->
+                <div class="navbar-start">
+                    <img src="c2-assets/logo-header.png" alt="Logo" class="h-10">
+                </div>
+
+                <!-- Center Menu (Large Screen) -->
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Product</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Right Side -->
+                <div class="navbar-end flex items-center gap-3">
+                    <!-- Dropdown (Small Screen) -->
+                    <div class="dropdown lg:hidden">
+                        <div tabindex="0" role="button" class="btn btn-ghost sm:dropdown-end">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow absolute right-0">
+                            <li><a>Product</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Contact Us</a></li>
+                            <a class="btn border-[#179800]">Login</a>
+                            <a class="btn bg-[#179800]">Register</a>
+                        </ul>
+                    </div>
+
+                
+                    <div class="hidden lg:flex items-center gap-3">
+                        <i class="fa-brands fa-searchengin"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a class="btn border-[#179800]">Login</a>
+                        <a class="btn bg-[#179800]">Register</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+      <section class="mt-15 text-center  ">
+        <h1 class="font-semibold text-4xl">Freshness <span class="text-[#179800]">You Can <br>
+            Count</span> On, Prices You’ll Love!</h1>
+            <p class="mt-4 font-[400px]">Shop your daily essentials at unbeatable prices. From fresh produce to pantry<br> staples, we’ve got you covered every day!</p>
+            <img class="mx-auto" src="c2-assets/hero-vegetables.png" alt="">
+      </section>
+
     </header>
+
     <main>
 
-    </main>
-    <footer>
+        <section class="md:container md:mx-auto mt-20 p-2 sm:p-10">
+            <h3 class="text-[#179800]/90 font-semibold text-2xl mb-6"> Services </h3>
+            
+            <div class="grid lg:grid-cols-3 gap-5 md:gap-8 lg:gap-10">
+                <!-- Card 1 -->
+                <div>
+                    <div class="card bg-[#EFEBE3] w-80 shadow-sm mx-auto">
+                        <figure>
+                            <img class="rounded-full bg-white px-2 py-2 mt-2"
+                                src="c2-assets/service.png"
+                                alt="" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title mx-auto">24/7 Services</h2>
+                            <p class="text-center">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div>
+                    <div class="card bg-[#EFEBE3] w-80 shadow-sm mx-auto">
+                        <figure>
+                            <img class="rounded-full bg-white px-2 py-2 mt-2"
+                                src="c2-assets/delivery.png"
+                                alt="" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title mx-auto">Fast Delivery</h2>
+                            <p class="text-center">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Card 3 -->
+                <div>
+                    <div class="card bg-[#EFEBE3] w-80 shadow-sm mx-auto">
+                        <figure>
+                            <img class="rounded-full bg-white px-2 py-2 mt-2"
+                                src="c2-assets/healthy.png"
+                                alt="" />
+                        </figure>
+                        <div class="card-body">
+                            <h2 class="card-title mx-auto">Healthy Products</h2>
+                            <p class="text-center">A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
 
+      <section class=" bg-[#EFEBE3]">
+          <div class=" md:container md:mx-auto">
+              <h1 class="text-gray-800 font-semibold text-2xl mb-5 ">Popular Products</h1>
+              
+              <div class="lg:flex">
+              <!-- card -->
+               <div class="bg-gradient-to-r from-[#53DB3A] rounded-sm w-2/6">
+                <div class="absolute mt-5">
+                    <h2 class="text-white font-semibold text-xl ml-10 ">30% off</h2>
+                    <p class="font-normal ml-10 mt-4">Discover a word of treats,toys and<br> essential handpick for</p>
+                    <button class="text-black rounded-sm text-center bg-white ml-10 mt-4">Buy now</button>
+                    </div>
+                    <img class="mr-0 ml-40 mb-0 " src="c2-assets/vegetable-offer.png" alt="">
+               </div>
+               <div>
+
+               </div>
+          </div>
+      </section>
+        
+    </main>
+
+    <footer>
     </footer>
 </body>
 </html>
